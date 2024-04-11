@@ -11,12 +11,14 @@
   <ul>
     <% songs.forEach(song => { %>
       <li>
-				<%= song.name %> 
+				<a href="/songs/<%= song._id %>"><%= song.text %></a> 
 				- 
 				<%= song.isGood ? 'Great Song' : 'Meh' %>
 			</li>
     <% }) %>
   </ul>
+
+  <a href="/songs/new">Add a song</a> <br>
 
   <a href="/">back</a>
 
