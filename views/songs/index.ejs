@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Some songs:</h1>
+
+  <ul>
+    <% songs.forEach(song => { %>
+      <li>
+				<%= song.name %> 
+				- 
+				<%= song.isGood ? 'Great Song' : 'Meh' %>
+			</li>
+    <% }) %>
+  </ul>
+
+  <a href="/">back</a>
+
+</body>
+</html>
