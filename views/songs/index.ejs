@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Some songs</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <h1>Some songs:</h1>
+  <h1>Some songs</h1>
+  <h2>as of <%= time %></h2>
 
   <ul>
     <% songs.forEach(song => { %>
       <li>
-				<a href="/songs/<%= song._id %>"><%= song.text %></a> 
+        <form 
+          action="/songs/<%= song._id %>?_method=DELETE"
+          class="delete-form"
+          method="POST"
+        >
+          <button type="submit">X</button>
+        </form> 
+        <a href="/songs/<%= song._id %>"><%= song.text %></a> 
 				- 
 				<%= song.isGood ? 'Great Song' : 'Meh' %>
 			</li>

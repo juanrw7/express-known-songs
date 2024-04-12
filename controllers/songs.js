@@ -7,7 +7,8 @@ function index (req, res) {
   Song.find({})
   .then(songs => {
     res.render('songs/index', {
-      songs: songs
+      songs: songs,
+      time: req.time
     })
   })
   .catch(error => { // If there's an error, console.log it and redirect back home!
@@ -46,9 +47,22 @@ function show(req,res){
   })
 }
 
+function deleteSong(req, res) {
+  console.log("delete running")
+  Song.findByIdAndDelete(req.params.songId)
+  .then(todo=>{
+    res.redirect("/songs")
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect("/songs")
+  })
+}
+
 export {
   index,
   newSong as new,
   create,
-  show
+  show,
+  deleteSong as delete
 }

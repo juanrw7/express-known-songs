@@ -16,4 +16,7 @@ router.get('/:songId',songsCtrl.show)
 // POST localhost:3000/songs
 router.post('/', songsCtrl.create)
 
+// DELETE localhost:3000/songs/songsId
+router.delete("/:songId",songsCtrl.delete)
+
 export { router }
