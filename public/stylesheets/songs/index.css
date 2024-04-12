@@ -5,16 +5,15 @@
 }
 	
 .delete-form button {
-  color: #2a751d;
+  color: #225c18;
   font-weight: bolder;
   background-color: rgb(176, 174, 174);
   border-radius: 5px;
 }
-
 .delete-form button:hover {
   cursor: pointer;
   background-color: #2a751d ;
-  color: rgb(176, 174, 174);
+  color: #39FF14;
 }
 	
 li {
@@ -26,9 +25,28 @@ body {
   color: #F8F6F0;
 }
 
+h1 {
+  margin: 40px 20px 10px 10px;
+}
+
+h3 {
+  margin: 5px 20px 30px 10px;
+}
+
+.add-song button {
+  background-color: #225c18 ;
+  color: #39FF14;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 6px;
+  margin: 10px 0px 20px 40px;
+}
+
 a {
   color: #39FF14;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -37,7 +55,7 @@ li {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  padding: 3px 10px 3px 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 6px;
   width:500px;
 }

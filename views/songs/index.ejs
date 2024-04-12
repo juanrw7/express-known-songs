@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Some songs</h1>
-  <h2>as of <%= time %></h2>
+  <h3>as of <%= time %></h3>
 
   <ul>
     <% songs.forEach(song => { %>
@@ -27,7 +27,13 @@
     <% }) %>
   </ul>
 
-  <a href="/songs/new">Add a song</a> <br>
+  <form 
+  action="/songs/new"
+  class="add-song"
+  method="GET"
+  >
+  <button type="submit">Add a song</button>
+  </form> 
 
   <a href="/">back</a>
 
