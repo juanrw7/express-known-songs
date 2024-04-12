@@ -1,0 +1,43 @@
+.delete-form {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: #2a751d;
+  font-weight: bolder;
+  background-color: rgb(176, 174, 174);
+  border-radius: 5px;
+}
+
+.delete-form button:hover {
+  cursor: pointer;
+  background-color: #2a751d ;
+  color: rgb(176, 174, 174);
+}
+	
+li {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(56, 55, 55);
+  color: #F8F6F0;
+}
+
+a {
+  color: #39FF14;
+  text-decoration: none;
+}
+
+li {
+  background-color: rgb(50, 50, 50);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px 3px 10px;
+  border-radius: 6px;
+  width:500px;
+}
